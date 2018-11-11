@@ -1,0 +1,1015 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o (exit)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+                              ./DWM1000_Reg_Operation.o (__tablejump2__)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+                              ./AT_Command.o (__do_copy_data)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+                              ./main.o (__do_clear_bss)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                              ./DWM1000_Reg_Operation.o (strcmp)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strncmp.o)
+                              ./AT_Command.o (strncmp)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+                              ./AT_Command.o (__itoa_ncheck)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o) (__utoa_common)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o) (strrev)
+
+Allocating common symbols
+Common symbol       size              file
+
+TMP_Receive         0x5               ./main.o
+Receive_STAMP       0x5               ./main.o
+A3                  0x4               ./main.o
+A5                  0x4               ./main.o
+Send2_STAMP         0x5               ./main.o
+Send1_STAMP         0x5               ./main.o
+Data                0xf               ./main.o
+A4                  0x4               ./main.o
+TMP_Transmit        0x5               ./main.o
+A7                  0x4               ./main.o
+A2                  0x4               ./main.o
+Data_Out            0x1e              ./main.o
+A1                  0x4               ./main.o
+A6                  0x4               ./main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+LOAD ./AT_Command.o
+LOAD ./DWM1000_Reg_Operation.o
+LOAD ./main.o
+START GROUP
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libatmega324pa.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x6d34
+ *(.vectors)
+ .vectors       0x00000000       0x7c c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.SetBit
+                0x0000007c       0xcc ./DWM1000_Reg_Operation.o
+                0x00000148                . = ALIGN (0x2)
+                0x00000148                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000148        0x0 linker stubs
+ *(.trampolines*)
+                0x00000148                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x00000148                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000148                __ctors_start = .
+ *(.ctors)
+                0x00000148                __ctors_end = .
+                0x00000148                __dtors_start = .
+ *(.dtors)
+                0x00000148                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000148        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+                0x00000148                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000148        0xc c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000154       0x16 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+                0x00000154                __do_copy_data
+ .init4         0x0000016a       0x10 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+                0x0000016a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000017a        0x8 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+ *(.init9)
+ *(.text)
+ .text          0x00000182        0x4 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+                0x00000182                __vector_22
+                0x00000182                __vector_28
+                0x00000182                __vector_1
+                0x00000182                __vector_24
+                0x00000182                __vector_12
+                0x00000182                __bad_interrupt
+                0x00000182                __vector_6
+                0x00000182                __vector_3
+                0x00000182                __vector_23
+                0x00000182                __vector_30
+                0x00000182                __vector_25
+                0x00000182                __vector_11
+                0x00000182                __vector_13
+                0x00000182                __vector_17
+                0x00000182                __vector_19
+                0x00000182                __vector_7
+                0x00000182                __vector_27
+                0x00000182                __vector_5
+                0x00000182                __vector_4
+                0x00000182                __vector_9
+                0x00000182                __vector_2
+                0x00000182                __vector_21
+                0x00000182                __vector_15
+                0x00000182                __vector_29
+                0x00000182                __vector_8
+                0x00000182                __vector_26
+                0x00000182                __vector_14
+                0x00000182                __vector_10
+                0x00000182                __vector_16
+                0x00000182                __vector_20
+ .text          0x00000186        0x0 ./AT_Command.o
+ .text          0x00000186        0x0 ./DWM1000_Reg_Operation.o
+ .text          0x00000186        0x0 ./main.o
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strncmp.o)
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+ .text          0x00000186        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00000186                . = ALIGN (0x2)
+ *(.text.*)
+ .text.ASCII_sign
+                0x00000186       0x16 ./AT_Command.o
+                0x00000186                ASCII_sign
+ .text.Hex_to_ASCII
+                0x0000019c      0x176 ./AT_Command.o
+                0x0000019c                Hex_to_ASCII
+ .text.Count_Array
+                0x00000312       0x1e ./AT_Command.o
+                0x00000312                Count_Array
+ .text.End_Line
+                0x00000330       0x26 ./AT_Command.o
+                0x00000330                End_Line
+ .text.WaitIfOK
+                0x00000356       0x84 ./AT_Command.o
+                0x00000356                WaitIfOK
+ .text.WaitForStart
+                0x000003da       0x76 ./AT_Command.o
+                0x000003da                WaitForStart
+ .text.AT       0x00000450       0xc4 ./AT_Command.o
+                0x00000450                AT
+ .text.AT_RST   0x00000514       0xd8 ./AT_Command.o
+                0x00000514                AT_RST
+ .text.AT_CWJAP
+                0x000005ec      0x1b6 ./AT_Command.o
+                0x000005ec                AT_CWJAP
+ .text.AT_CWMODE
+                0x000007a2      0x12a ./AT_Command.o
+                0x000007a2                AT_CWMODE
+ .text.AT_CIPMUX
+                0x000008cc      0x106 ./AT_Command.o
+                0x000008cc                AT_CIPMUX
+ .text.AT_CIPSTART
+                0x000009d2      0x24a ./AT_Command.o
+                0x000009d2                AT_CIPSTART
+ .text.AT_CIPSEND
+                0x00000c1c      0x1e4 ./AT_Command.o
+                0x00000c1c                AT_CIPSEND
+ .text.New_Line
+                0x00000e00       0x1e ./DWM1000_Reg_Operation.o
+                0x00000e00                New_Line
+ .text.ArrayEqual
+                0x00000e1e       0x3e ./DWM1000_Reg_Operation.o
+                0x00000e1e                ArrayEqual
+ .text.Transmit_Disable
+                0x00000e5c        0x4 ./DWM1000_Reg_Operation.o
+                0x00000e5c                Transmit_Disable
+ .text.Transmit_Enable
+                0x00000e60        0x4 ./DWM1000_Reg_Operation.o
+                0x00000e60                Transmit_Enable
+ .text.SPI_Init
+                0x00000e64       0x16 ./DWM1000_Reg_Operation.o
+                0x00000e64                SPI_Init
+ .text.WriteByteSPI
+                0x00000e7a        0xc ./DWM1000_Reg_Operation.o
+                0x00000e7a                WriteByteSPI
+ .text.Get_Select
+                0x00000e86      0x32e ./DWM1000_Reg_Operation.o
+                0x00000e86                Get_Select
+ .text.Get_ID   0x000011b4       0x38 ./DWM1000_Reg_Operation.o
+                0x000011b4                Get_ID
+ .text.Get_SystemConfiguration
+                0x000011ec       0x3e ./DWM1000_Reg_Operation.o
+                0x000011ec                Get_SystemConfiguration
+ .text.Get_SystemTimeCounter
+                0x0000122a       0x8e ./DWM1000_Reg_Operation.o
+                0x0000122a                Get_SystemTimeCounter
+ .text.Get_TransmitFrameControl
+                0x000012b8       0x8e ./DWM1000_Reg_Operation.o
+                0x000012b8                Get_TransmitFrameControl
+ .text.Get_ReceiveFrameWaitTimeoutPeriod
+                0x00001346       0x52 ./DWM1000_Reg_Operation.o
+                0x00001346                Get_ReceiveFrameWaitTimeoutPeriod
+ .text.Get_SystemControlRegister
+                0x00001398       0x3e ./DWM1000_Reg_Operation.o
+                0x00001398                Get_SystemControlRegister
+ .text.Get_SystemEventMaskRegister
+                0x000013d6       0x3e ./DWM1000_Reg_Operation.o
+                0x000013d6                Get_SystemEventMaskRegister
+ .text.Get_SystemEventStatusRegister
+                0x00001414       0x8e ./DWM1000_Reg_Operation.o
+                0x00001414                Get_SystemEventStatusRegister
+ .text.Get_RXFrameInformationRegister
+                0x000014a2       0x3e ./DWM1000_Reg_Operation.o
+                0x000014a2                Get_RXFrameInformationRegister
+ .text.Get_RXFrameQualityInformation
+                0x000014e0       0x8e ./DWM1000_Reg_Operation.o
+                0x000014e0                Get_RXFrameQualityInformation
+ .text.Get_ReceiverTimeTrackingInterval
+                0x0000156e       0x3e ./DWM1000_Reg_Operation.o
+                0x0000156e                Get_ReceiverTimeTrackingInterval
+ .text.Get_ReceiverTimeTrackingOffset
+                0x000015ac       0x8e ./DWM1000_Reg_Operation.o
+                0x000015ac                Get_ReceiverTimeTrackingOffset
+ .text.Get_FastReceiveTimeStamp
+                0x0000163a       0x92 ./DWM1000_Reg_Operation.o
+                0x0000163a                Get_FastReceiveTimeStamp
+ .text.Get_ReceiveTimeStamp
+                0x000016cc      0x12a ./DWM1000_Reg_Operation.o
+                0x000016cc                Get_ReceiveTimeStamp
+ .text.Get_FastTransmitTimeStamp
+                0x000017f6       0x92 ./DWM1000_Reg_Operation.o
+                0x000017f6                Get_FastTransmitTimeStamp
+ .text.Get_TransmitTimeStamp
+                0x00001888       0xde ./DWM1000_Reg_Operation.o
+                0x00001888                Get_TransmitTimeStamp
+ .text.Get_TransmitterAntennaDelay
+                0x00001966       0x3e ./DWM1000_Reg_Operation.o
+                0x00001966                Get_TransmitterAntennaDelay
+ .text.Get_AcknowledgementTimeAndResponceTime
+                0x000019a4       0x3e ./DWM1000_Reg_Operation.o
+                0x000019a4                Get_AcknowledgementTimeAndResponceTime
+ .text.Get_SNIFFMode
+                0x000019e2       0x3e ./DWM1000_Reg_Operation.o
+                0x000019e2                Get_SNIFFMode
+ .text.Get_TransmitPowerControl
+                0x00001a20       0x3e ./DWM1000_Reg_Operation.o
+                0x00001a20                Get_TransmitPowerControl
+ .text.Get_ChannelControl
+                0x00001a5e       0x3e ./DWM1000_Reg_Operation.o
+                0x00001a5e                Get_ChannelControl
+ .text.Get_AGCConfigurationAndControl
+                0x00001a9c      0x19c ./DWM1000_Reg_Operation.o
+                0x00001a9c                Get_AGCConfigurationAndControl
+ .text.Get_ExternalSynchronizationControl
+                0x00001c38       0xde ./DWM1000_Reg_Operation.o
+                0x00001c38                Get_ExternalSynchronizationControl
+ .text.Get_GPIOModeControlRegister
+                0x00001d16       0x52 ./DWM1000_Reg_Operation.o
+                0x00001d16                Get_GPIOModeControlRegister
+ .text.Get_GPIODirectionControlRegister
+                0x00001d68       0x54 ./DWM1000_Reg_Operation.o
+                0x00001d68                Get_GPIODirectionControlRegister
+ .text.Get_GPIODataOutputRegister
+                0x00001dbc       0x54 ./DWM1000_Reg_Operation.o
+                0x00001dbc                Get_GPIODataOutputRegister
+ .text.Get_GPIOInterruptEnable
+                0x00001e10       0x54 ./DWM1000_Reg_Operation.o
+                0x00001e10                Get_GPIOInterruptEnable
+ .text.Get_GPIOInterruptSenseSelection
+                0x00001e64       0x54 ./DWM1000_Reg_Operation.o
+                0x00001e64                Get_GPIOInterruptSenseSelection
+ .text.Get_GPIOInterruptMode
+                0x00001eb8       0x54 ./DWM1000_Reg_Operation.o
+                0x00001eb8                Get_GPIOInterruptMode
+ .text.Get_GPIOInterruptBoth_EdgeSelect
+                0x00001f0c       0x54 ./DWM1000_Reg_Operation.o
+                0x00001f0c                Get_GPIOInterruptBoth_EdgeSelect
+ .text.Get_GPIOInterruptLatchClear
+                0x00001f60       0x54 ./DWM1000_Reg_Operation.o
+                0x00001f60                Get_GPIOInterruptLatchClear
+ .text.Get_GPIOInterruptDebounceEnable
+                0x00001fb4       0x54 ./DWM1000_Reg_Operation.o
+                0x00001fb4                Get_GPIOInterruptDebounceEnable
+ .text.Get_GPIORawState
+                0x00002008       0x54 ./DWM1000_Reg_Operation.o
+                0x00002008                Get_GPIORawState
+ .text.Get_DigitalReceiverConfiguration
+                0x0000205c      0x24c ./DWM1000_Reg_Operation.o
+                0x0000205c                Get_DigitalReceiverConfiguration
+ .text.Get_AnalogRFConfigurationBlock
+                0x000022a8      0x1ec ./DWM1000_Reg_Operation.o
+                0x000022a8                Get_AnalogRFConfigurationBlock
+ .text.Get_TransimtterCalibrationBlock
+                0x00002494      0x194 ./DWM1000_Reg_Operation.o
+                0x00002494                Get_TransimtterCalibrationBlock
+ .text.Get_FrequencySynthesiserControlBlock
+                0x00002628       0xf2 ./DWM1000_Reg_Operation.o
+                0x00002628                Get_FrequencySynthesiserControlBlock
+ .text.Get_AlwaysONSystemControlInterface
+                0x0000271a      0x1ec ./DWM1000_Reg_Operation.o
+                0x0000271a                Get_AlwaysONSystemControlInterface
+ .text.Get_OTPWriteData
+                0x00002906       0x52 ./DWM1000_Reg_Operation.o
+                0x00002906                Get_OTPWriteData
+ .text.Get_OTPAddress
+                0x00002958       0x54 ./DWM1000_Reg_Operation.o
+                0x00002958                Get_OTPAddress
+ .text.Get_OTPControl
+                0x000029ac       0x54 ./DWM1000_Reg_Operation.o
+                0x000029ac                Get_OTPControl
+ .text.Get_OTPStatus
+                0x00002a00       0x54 ./DWM1000_Reg_Operation.o
+                0x00002a00                Get_OTPStatus
+ .text.Get_OTPReadData
+                0x00002a54       0x54 ./DWM1000_Reg_Operation.o
+                0x00002a54                Get_OTPReadData
+ .text.Get_OTPSpecialRegisterReadData
+                0x00002aa8       0x54 ./DWM1000_Reg_Operation.o
+                0x00002aa8                Get_OTPSpecialRegisterReadData
+ .text.Get_OTPSpecialFunction
+                0x00002afc       0x54 ./DWM1000_Reg_Operation.o
+                0x00002afc                Get_OTPSpecialFunction
+ .text.Get_LeadingEdgeDetectionInterface
+                0x00002b50      0x31e ./DWM1000_Reg_Operation.o
+                0x00002b50                Get_LeadingEdgeDetectionInterface
+ .text.Get_PowerManagementAndSystemControl
+                0x00002e6e      0x194 ./DWM1000_Reg_Operation.o
+                0x00002e6e                Get_PowerManagementAndSystemControl
+ .text.Get_RXFrameBuffer
+                0x00003002       0x70 ./DWM1000_Reg_Operation.o
+                0x00003002                Get_RXFrameBuffer
+ .text.Set_ID   0x00003072       0x3e ./DWM1000_Reg_Operation.o
+                0x00003072                Set_ID
+ .text.Set_SystemConfiguration
+                0x000030b0       0x3e ./DWM1000_Reg_Operation.o
+                0x000030b0                Set_SystemConfiguration
+ .text.Set_SystemTimeCounter
+                0x000030ee       0x8e ./DWM1000_Reg_Operation.o
+                0x000030ee                Set_SystemTimeCounter
+ .text.Set_TransmitFrameControl
+                0x0000317c       0x8e ./DWM1000_Reg_Operation.o
+                0x0000317c                Set_TransmitFrameControl
+ .text.Stop_Transmiter
+                0x0000320a       0x5e ./DWM1000_Reg_Operation.o
+                0x0000320a                Stop_Transmiter
+ .text.Start_Transmit
+                0x00003268       0x5e ./DWM1000_Reg_Operation.o
+                0x00003268                Start_Transmit
+ .text.Start_Receiving
+                0x000032c6       0x5e ./DWM1000_Reg_Operation.o
+                0x000032c6                Start_Receiving
+ .text.Set_SystemControlRegister
+                0x00003324       0x3e ./DWM1000_Reg_Operation.o
+                0x00003324                Set_SystemControlRegister
+ .text.Set_SystemEventMaskRegister
+                0x00003362       0x3e ./DWM1000_Reg_Operation.o
+                0x00003362                Set_SystemEventMaskRegister
+ .text.Set_SystemEventStatusRegister
+                0x000033a0       0x8e ./DWM1000_Reg_Operation.o
+                0x000033a0                Set_SystemEventStatusRegister
+ .text.Set_RXFrameInformationRegister
+                0x0000342e       0x3e ./DWM1000_Reg_Operation.o
+                0x0000342e                Set_RXFrameInformationRegister
+ .text.Set_RXFrameQualityInformation
+                0x0000346c       0x8e ./DWM1000_Reg_Operation.o
+                0x0000346c                Set_RXFrameQualityInformation
+ .text.Set_ReceiverTimeTrackingInterval
+                0x000034fa       0x3e ./DWM1000_Reg_Operation.o
+                0x000034fa                Set_ReceiverTimeTrackingInterval
+ .text.Set_ReceiverTimeTrackingOffset
+                0x00003538       0x8e ./DWM1000_Reg_Operation.o
+                0x00003538                Set_ReceiverTimeTrackingOffset
+ .text.Set_ReceiveTimeStamp
+                0x000035c6      0x12a ./DWM1000_Reg_Operation.o
+                0x000035c6                Set_ReceiveTimeStamp
+ .text.Set_TransmitTimeStamp
+                0x000036f0       0xde ./DWM1000_Reg_Operation.o
+                0x000036f0                Set_TransmitTimeStamp
+ .text.Set_TransmitterAntennaDelay
+                0x000037ce       0x3e ./DWM1000_Reg_Operation.o
+                0x000037ce                Set_TransmitterAntennaDelay
+ .text.Set_AcknowledgementTimeAndResponceTime
+                0x0000380c       0x3e ./DWM1000_Reg_Operation.o
+                0x0000380c                Set_AcknowledgementTimeAndResponceTime
+ .text.Set_SNIFFMode
+                0x0000384a       0x3e ./DWM1000_Reg_Operation.o
+                0x0000384a                Set_SNIFFMode
+ .text.Set_TransmitPowerControl
+                0x00003888       0x3e ./DWM1000_Reg_Operation.o
+                0x00003888                Set_TransmitPowerControl
+ .text.Set_ChannelControl
+                0x000038c6       0x3e ./DWM1000_Reg_Operation.o
+                0x000038c6                Set_ChannelControl
+ .text.Set_AGCConfigurationAndControl
+                0x00003904      0x19c ./DWM1000_Reg_Operation.o
+                0x00003904                Set_AGCConfigurationAndControl
+ .text.Set_ExternalSynchronizationControl
+                0x00003aa0       0xde ./DWM1000_Reg_Operation.o
+                0x00003aa0                Set_ExternalSynchronizationControl
+ .text.Set_GPIOModeControlRegister
+                0x00003b7e       0x52 ./DWM1000_Reg_Operation.o
+                0x00003b7e                Set_GPIOModeControlRegister
+ .text.Set_GPIODirectionControlRegister
+                0x00003bd0       0x54 ./DWM1000_Reg_Operation.o
+                0x00003bd0                Set_GPIODirectionControlRegister
+ .text.Set_GPIODataOutputRegister
+                0x00003c24       0x54 ./DWM1000_Reg_Operation.o
+                0x00003c24                Set_GPIODataOutputRegister
+ .text.Set_GPIOInterruptEnable
+                0x00003c78       0x54 ./DWM1000_Reg_Operation.o
+                0x00003c78                Set_GPIOInterruptEnable
+ .text.Set_GPIOInterruptSenseSelection
+                0x00003ccc       0x54 ./DWM1000_Reg_Operation.o
+                0x00003ccc                Set_GPIOInterruptSenseSelection
+ .text.Set_GPIOInterruptMode
+                0x00003d20       0x54 ./DWM1000_Reg_Operation.o
+                0x00003d20                Set_GPIOInterruptMode
+ .text.Set_GPIOInterruptBoth_EdgeSelect
+                0x00003d74       0x54 ./DWM1000_Reg_Operation.o
+                0x00003d74                Set_GPIOInterruptBoth_EdgeSelect
+ .text.Set_GPIOInterruptLatchClear
+                0x00003dc8       0x54 ./DWM1000_Reg_Operation.o
+                0x00003dc8                Set_GPIOInterruptLatchClear
+ .text.Set_GPIOInterruptDebounceEnable
+                0x00003e1c       0x54 ./DWM1000_Reg_Operation.o
+                0x00003e1c                Set_GPIOInterruptDebounceEnable
+ .text.Set_GPIORawState
+                0x00003e70       0x54 ./DWM1000_Reg_Operation.o
+                0x00003e70                Set_GPIORawState
+ .text.Set_DigitalReceiverConfiguration
+                0x00003ec4      0x24c ./DWM1000_Reg_Operation.o
+                0x00003ec4                Set_DigitalReceiverConfiguration
+ .text.Set_AnalogRFConfigurationBlock
+                0x00004110      0x1ec ./DWM1000_Reg_Operation.o
+                0x00004110                Set_AnalogRFConfigurationBlock
+ .text.Set_TransimtterCalibrationBlock
+                0x000042fc      0x194 ./DWM1000_Reg_Operation.o
+                0x000042fc                Set_TransimtterCalibrationBlock
+ .text.Set_FrequencySynthesiserControlBlock
+                0x00004490       0xf2 ./DWM1000_Reg_Operation.o
+                0x00004490                Set_FrequencySynthesiserControlBlock
+ .text.Set_OTPWriteData
+                0x00004582       0x52 ./DWM1000_Reg_Operation.o
+                0x00004582                Set_OTPWriteData
+ .text.Set_OTPAddress
+                0x000045d4       0x54 ./DWM1000_Reg_Operation.o
+                0x000045d4                Set_OTPAddress
+ .text.Set_OTPControl
+                0x00004628       0x54 ./DWM1000_Reg_Operation.o
+                0x00004628                Set_OTPControl
+ .text.Set_OTPStatus
+                0x0000467c       0x54 ./DWM1000_Reg_Operation.o
+                0x0000467c                Set_OTPStatus
+ .text.Set_OTPReadData
+                0x000046d0       0x54 ./DWM1000_Reg_Operation.o
+                0x000046d0                Set_OTPReadData
+ .text.Set_OTPSpecialRegisterReadData
+                0x00004724       0x54 ./DWM1000_Reg_Operation.o
+                0x00004724                Set_OTPSpecialRegisterReadData
+ .text.Set_OTPSpecialFunction
+                0x00004778       0x54 ./DWM1000_Reg_Operation.o
+                0x00004778                Set_OTPSpecialFunction
+ .text.Set_LeadingEdgeDetectionInterface
+                0x000047cc      0x31e ./DWM1000_Reg_Operation.o
+                0x000047cc                Set_LeadingEdgeDetectionInterface
+ .text.Set_PowerManagementAndSystemControl
+                0x00004aea      0x194 ./DWM1000_Reg_Operation.o
+                0x00004aea                Set_PowerManagementAndSystemControl
+ .text.Set_AlwaysONSystemControlInterface
+                0x00004c7e      0x1ec ./DWM1000_Reg_Operation.o
+                0x00004c7e                Set_AlwaysONSystemControlInterface
+ .text.SetBit   0x00004e6a     0x157c ./DWM1000_Reg_Operation.o
+                0x00004e6a                SetBit
+ .text.Set_TransmitBuffer
+                0x000063e6       0x3e ./DWM1000_Reg_Operation.o
+                0x000063e6                Set_TransmitBuffer
+ .text.Set_ReceiveFrameWaitTimeoutPeriod
+                0x00006424       0x52 ./DWM1000_Reg_Operation.o
+                0x00006424                Set_ReceiveFrameWaitTimeoutPeriod
+ .text.TIMER_Init
+                0x00006476       0x12 ./main.o
+                0x00006476                TIMER_Init
+ .text.Usart_Init
+                0x00006488       0x1c ./main.o
+                0x00006488                Usart_Init
+ .text.ESP8266_Init
+                0x000064a4       0xf2 ./main.o
+                0x000064a4                ESP8266_Init
+ .text.Reset_timeout
+                0x00006596       0x10 ./main.o
+                0x00006596                Reset_timeout
+ .text.Delay    0x000065a6       0x2e ./main.o
+                0x000065a6                Delay
+ .text.Distance_Measure
+                0x000065d4      0x22a ./main.o
+                0x000065d4                Distance_Measure
+ .text.startup.main
+                0x000067fe      0x446 ./main.o
+                0x000067fe                main
+ .text.__vector_18
+                0x00006c44       0x48 ./main.o
+                0x00006c44                __vector_18
+ .text.libgcc.mul
+                0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00006c8c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc   0x00006c8c        0xc c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+                0x00006c8c                __tablejump2__
+ .text.libgcc.prologue
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00006c98        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00006c98       0x12 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x00006c98                strcmp
+ .text.avr-libc
+                0x00006caa       0x1c c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strncmp.o)
+                0x00006caa                strncmp
+ .text.avr-libc
+                0x00006cc6       0x16 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+                0x00006cc6                __itoa_ncheck
+ .text.avr-libc
+                0x00006cdc       0x34 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+                0x00006cdc                __utoa_ncheck
+                0x00006cde                __utoa_common
+ .text.avr-libc
+                0x00006d10       0x20 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00006d10                strrev
+                0x00006d30                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00006d30        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                0x00006d30                _exit
+                0x00006d30                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00006d30        0x4 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00006d34                _etext = .
+
+.data           0x00800100      0x51a load address 0x00006d34
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+ .data          0x00800100        0x0 ./AT_Command.o
+ .data          0x00800100        0x0 ./DWM1000_Reg_Operation.o
+ .data          0x00800100        0x0 ./main.o
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strncmp.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+ *(.data*)
+ .data.TAB      0x00800100       0x20 ./AT_Command.o
+                0x00800100                TAB
+ .data.WAKEUP   0x00800120        0x2 ./main.o
+                0x00800120                WAKEUP
+ .data.Reset    0x00800122        0x4 ./main.o
+                0x00800122                Reset
+ .data.START    0x00800126        0x4 ./main.o
+                0x00800126                START
+ .data.TRANSMIT_DATA
+                0x0080012a        0xa ./main.o
+                0x0080012a                TRANSMIT_DATA
+ .data.TRANSMIT_FRAME
+                0x00800134        0x4 ./main.o
+                0x00800134                TRANSMIT_FRAME
+ .data.BLINK_TEST
+                0x00800138        0x4 ./main.o
+                0x00800138                BLINK_TEST
+ .data.BLINK    0x0080013c        0x4 ./main.o
+                0x0080013c                BLINK
+ .data.OTP_CONTROL_Value
+                0x00800140        0x2 ./main.o
+                0x00800140                OTP_CONTROL_Value
+ .data.FS_PLLTUNE
+                0x00800142        0x1 ./main.o
+                0x00800142                FS_PLLTUNE
+ .data.FS_PLLCFG
+                0x00800143        0x4 ./main.o
+                0x00800143                FS_PLLCFG
+ .data.TC_PGDELAY
+                0x00800147        0x1 ./main.o
+                0x00800147                TC_PGDELAY
+ .data.RF_TXCTRL
+                0x00800148        0x3 ./main.o
+                0x00800148                RF_TXCTRL
+ .data.RF_RXCTRL
+                0x0080014b        0x1 ./main.o
+                0x0080014b                RF_RXCTRL
+ .data.TX_POWER
+                0x0080014c        0x4 ./main.o
+                0x0080014c                TX_POWER
+ .data.LDE_CFG2
+                0x00800150        0x2 ./main.o
+                0x00800150                LDE_CFG2
+ .data.LDE_CFG1
+                0x00800152        0x1 ./main.o
+                0x00800152                LDE_CFG1
+ .data.DRX_TUNE4H
+                0x00800153        0x2 ./main.o
+                0x00800153                DRX_TUNE4H
+ .data.DRX_TUNE2
+                0x00800155        0x4 ./main.o
+                0x00800155                DRX_TUNE2
+ .data.DRX_TUNE1b
+                0x00800159        0x2 ./main.o
+                0x00800159                DRX_TUNE1b
+ .data.DRX_TUNE1a
+                0x0080015b        0x2 ./main.o
+                0x0080015b                DRX_TUNE1a
+ .data.DRX_TUNE0b
+                0x0080015d        0x2 ./main.o
+                0x0080015d                DRX_TUNE0b
+ .data.AGC_TUNE3
+                0x0080015f        0x2 ./main.o
+                0x0080015f                AGC_TUNE3
+ .data.AGC_TUNE2
+                0x00800161        0x4 ./main.o
+                0x00800161                AGC_TUNE2
+ .data.tflag    0x00800165        0x2 ./main.o
+                0x00800165                tflag
+ *(.rodata)
+ .rodata        0x00800167       0x2c ./AT_Command.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800193       0x36 ./AT_Command.o
+                                 0x42 (size before relaxing)
+ .rodata.CSWTCH.13
+                0x008001c9        0xf ./AT_Command.o
+ .rodata.str1.1
+                0x008001d8      0x3db ./DWM1000_Reg_Operation.o
+ .rodata.str1.1
+                0x008005b3       0x67 ./main.o
+                                 0x7c (size before relaxing)
+ *(.gnu.linkonce.d*)
+                0x0080061a                . = ALIGN (0x2)
+                0x0080061a                _edata = .
+                0x0080061a                PROVIDE (__data_end, .)
+
+.bss            0x0080061a       0x6a
+                0x0080061a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+ .bss           0x0080061a        0x0 ./AT_Command.o
+ .bss           0x0080061a        0x0 ./DWM1000_Reg_Operation.o
+ .bss           0x0080061a        0x0 ./main.o
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strncmp.o)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+ .bss           0x0080061a        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+ *(.bss*)
+ .bss.Repeat_flag
+                0x0080061a        0x1 ./main.o
+                0x0080061a                Repeat_flag
+ .bss.Break_flag
+                0x0080061b        0x1 ./main.o
+                0x0080061b                Break_flag
+ .bss.Delay_time
+                0x0080061c        0x2 ./main.o
+                0x0080061c                Delay_time
+ .bss.Repeat_time
+                0x0080061e        0x2 ./main.o
+                0x0080061e                Repeat_time
+ .bss.Break_time
+                0x00800620        0x2 ./main.o
+                0x00800620                Break_time
+ *(COMMON)
+ COMMON         0x00800622       0x62 ./main.o
+                0x00800622                TMP_Receive
+                0x00800627                Receive_STAMP
+                0x0080062c                A3
+                0x00800630                A5
+                0x00800634                Send2_STAMP
+                0x00800639                Send1_STAMP
+                0x0080063e                Data
+                0x0080064d                A4
+                0x00800651                TMP_Transmit
+                0x00800656                A7
+                0x0080065a                A2
+                0x0080065e                Data_Out
+                0x0080067c                A1
+                0x00800680                A6
+                0x00800684                PROVIDE (__bss_end, .)
+                0x00006d34                __data_load_start = LOADADDR (.data)
+                0x0000724e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800684        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00800684                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 ./AT_Command.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 ./DWM1000_Reg_Operation.o
+ .comment       0x00000030       0x31 ./main.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x6cc
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x6cc c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.debug_abbrev   0x00000000      0x66e
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x66e c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.debug_line     0x00000000       0x1a
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1a c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x00000000      0x255
+ *(.debug_str)
+ .debug_str     0x00000000      0x255 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(DWM_Distance.elf elf32-avr)
+LOAD linker stubs

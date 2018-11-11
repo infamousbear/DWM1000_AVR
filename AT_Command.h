@@ -1,0 +1,13 @@
+void Hex_to_ASCII(char HEX[], char ASCII[], int Tab_size);
+char ASCII_sign(int sign);
+int Count_Array(char* arr);
+void End_Line(void);
+void WaitIfOK(void);
+void WaitForStart(void);
+void AT(void);
+void AT_RST(void);
+void AT_CWJAP(char* SSID, char* Password);
+void AT_CWMODE(int mode);
+void AT_CIPMUX(int mode);
+void AT_CIPSTART(int ID, char* Type, char* IP, char* Port);
+void AT_CIPSEND(int ID, char* Data, int Device_ID);
